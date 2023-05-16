@@ -1,3 +1,6 @@
 The design of this pathfinder program is so simple and using a grid-based environment. The design will fully use the terminal or command prompt from your computer.
 Initially, several questions will be given that will provide information about the grid size, starting point, and goal point. After all these questions have been answered, the design directly will show the shortest path between the starting point and the goal point using the A Star Algorithm.
 ‘.’ characters is show the grid, ‘#’ characters will show the corresponding cells or the shortest path, starting point is marked with ‘0’, and goal point is marked with ‘X’.
+
+Here's the design :
+![Picture1](https://github.com/LigarArnata/Quiz-2-PAA/assets/95403456/3e1c1156-2f8d-406d-b484-ee1ae82849fa)
