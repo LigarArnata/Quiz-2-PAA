@@ -1,0 +1,29 @@
+1.This program begins by including some of library (‘vector’, ‘list’, ‘iostream’) and declaring global variables such as ‘rows’, ‘cols’, ‘w’, and ‘h’. These variables is used to define the dimensions of the grid and the size of each grid cell.
+
+2.After that, a ‘spot’ class is defined to represent each cell in the grid. Each ‘spot’ object contains attributes such as ‘i’ and ‘j’ (representing the row and column indices), ‘f’ and ‘g’ (used for A* algorithm), a ‘vector’ of neighboring spots, and a ‘parent’ pointer.
+
+3.The ‘spot’ class will provides two constructor, a default constructor and a parameterized constructor that initializes the ‘i’ and ‘j’ attributes.
+
+4.The ‘addNeighbors’ method in the ‘spot’ class is used to initialize the ‘neighbors’ vector by adding neighboring spots to it. Neighbors are added based on the spot’s position in the grid. 
+
+5.The ‘equalSpots’ method is used to check whether two spots are equal by comparing their ‘i’and ‘j’ attributes.
+
+6.The ‘printSpot’ method simply prints the ‘(i, j)’ coordinates of a spot.
+
+7.The ‘printParents’ method is used to print the parent spot’s coordinates for each spot in the grid.
+
+8.The program will includes several utility functions such as ‘printNeighbors’ ‘printSpotList’, ‘removeFromVector’, ‘reconstructPath’, ‘includes’, ‘heuristic’, and ‘leatsFnode’. These function will perform various tasks related to printing grid information, manipulating list and vectors, calculating heuristics value, and finding the spot with least ‘f’ value.
+
+9.The ‘a_starNew’ function implements the A* algorithm. It takes in the grid, start spot, and end spot as parameters and returns a list of spots representing the path from start to end. The algorithm uses an open set to keep track of unexplored spots and performs the A* search until the open set is empty or the goal spot is reached. 
+
+10.In the ‘main’ function, the user is prompted to enter the number of columns and rows for the grid. The grid is resized accordingly, and a terminal array is initialized to represent the grid visually.
+
+11.The grid is then populated with ‘spot’ object, and each spot’s neighbors are added using the ‘addNeighbors’ method.
+
+12.The user is prompted to enter the coordinates for starting and goal points.
+
+13.The A* algorithm is called with the grid, start spot, and end spot as arguments, and the returned path is stored in a list.
+
+14.The path is visualized on the terminal by marking the corresponding cells with ‘#’ characters. The starting point is marked with ‘0’, and the goal is marked with ‘X’.
+
+15.Finally, the terminal is printed to display the grid with the path.
